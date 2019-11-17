@@ -1,14 +1,181 @@
 #include <iostream>
-#include "myvector.hpp"
+#include <fstream>
+#include <cstdio>
 
 const bool red = 1;
 const bool black = 0;
 
 using namespace std;
 
+char IgnoreReg(const char &a) {
+    if (a >= 65 && a <= 90) {
+        return a - 65 + 'a';
+    } else {
+        return a;
+    }
+}
+     
+template <class T>
+class TVector {
+    private:
+        T* vector;
+        int size;
+        int limit;
+    public:
+        TVector() {
+            size = -1;
+            limit = 1;
+            vector = new T[limit];
+        }
+        TVector(const int &mem) {
+            size = -1;
+            limit = mem;
+            vector = new T[limit];
+        }
+        
+        TVector (const TVector <T> &b) {
+            size = b.size;
+            limit = b.limit;
+            vector = new T[limit];
+            for (int i = 0; i <= size; i++) {
+                vector[i] = b.vector[i];
+            }
+        }
+        
+        const int Len(void) {
+            return size + 1;
+        }
+        
+        T & operator [] (const int &i) {
+            if (i < 0 || i > size) {
+                throw std::out_of_range("Out of range!!!");
+            }
+            return *(vector + i);
+        }
+        T & At(const int &i) {
+            if (i < 0 || i > size) {
+                throw std::out_of_range("Out of range!!!");
+            }
+            return *(vector + i);
+        }
+        
+        void PushBack(const T a) {
+            const int mnoj = 2;
+            size++;
+            if (size == limit) {
+                T* help = new T[mnoj * limit];
+                for (int i = 0; i < size; i++) {
+                    help[i] = vector[i];
+                }
+                delete [] vector;
+                help[size] = a;
+                vector = help;
+                limit = limit * mnoj;
+            } else {
+                vector[size] = a;
+            }
+        }
+        void PushFront(const T a) {
+            Insert(a, 0);
+        }
+        
+        void operator = (const TVector <T> &b) {
+            delete [] vector;
+            size = b.size;
+            limit = b.limit;
+            vector = new T[limit];
+            for (int i = 0; i <= size; i++) {
+                vector[i] = b.vector[i];
+            }
+        }
+        bool operator == (TVector <T> &b) {
+            if ((*this).Len() == b.Len()) {
+                for (int i = 0; i < b.Len(); i++) {
+                    if ((*this)[i] != b[i]) 
+                        return 0;
+                    }
+                return 1;
+            }
+            return 0;
+        }
+        void operator = (char* str) {
+            delete [] vector;
+            int i = 0;
+            while (true) {
+                if (str[i] == '\0') {
+                    break;
+                }
+                i++;
+            }
+            if (i > 0) {
+                limit = i;
+                vector = new char[limit];
+            } else {
+                limit = 1;
+                size = -1;
+                vector = new char[limit];
+                return;
+            }
+            for (int j = 0; j < i; j++) {
+                vector[j] = IgnoreReg(str[j]);
+            }
+            size = i - 1;
+        }
+        
+        void Insert(const T num, const int &j) {
+            if (j < 0 || j > size + 1)
+                throw std::out_of_range("Out of range!!!");
+            size++;
+            if (size != limit) {
+                for (int i = size; i > j; i--) {
+                    vector[i] = vector[i - 1];
+                }
+                vector[j] = num;
+                return;
+            }
+            TVector <T> b(limit);
+            for (int i = 0; i < j; i++) {
+                b.PushBack(vector[i]);
+            }
+            b.PushBack(num);
+            for (int i = j; i < size; i++) {
+                b.PushBack(vector[i]);
+            }
+            *this = b;
+        }
+        T const Erase (const int &j) {
+            if (j < 0 || j > size)
+                throw std::out_of_range("Out of range!!!");
+            T em = vector[j];
+            for (int i = j; i < size; i++) {
+                vector[i] = vector[i + 1];
+            }
+            size--;
+            return em;
+        }
+        T const PopBack(void) {
+            return Erase(size);
+        }
+        
+        friend void Swap (TVector <T> &a, TVector <T> &b) {
+            std::swap(a, b);
+        }
+    
+        void Clear(void) {
+            size = -1;
+            limit = 1;
+            delete [] vector;
+            vector = new T[limit];
+        }
+        
+        ~ TVector () {
+            delete [] vector;
+        }
+};
+
 struct Data {
 	TVector <char> key;
-	TVector <int> value;
+	unsigned long long value;
     bool color;
 };
 
@@ -17,10 +184,7 @@ void PrintDateR(Data &date) {
         printf("\033[31m%c\033[0m", date.key[i]);
     }
     putchar(' ');
-    for (int i = 0; i < date.value.Len(); i++) {
-        printf("\033[31m%d\033[0m", date.value[i]);
-    }
-    putchar('\n');
+    printf("\033[31m%llu\033[0m\n", date.value);
 }
 
 void PrintDateB(Data &date) {
@@ -28,15 +192,11 @@ void PrintDateB(Data &date) {
         printf("%c", date.key[i]);
     }
     putchar(' ');
-    for (int i = 0; i < date.value.Len(); i++) {
-        printf("%d", date.value[i]);
-    }
-    putchar('\n');
+    printf("%llu\n", date.value);
 }
 
 void ClearData(Data &date) {
     date.key.Clear();
-    date.value.Clear();
 }
 
 bool IsBigger(TVector <char> &vec1, TVector <char> &vec2) {
@@ -53,17 +213,17 @@ bool IsBigger(TVector <char> &vec1, TVector <char> &vec2) {
 			}
         }
     }
-    return 1;
+    return 0;
 }
 
 class RBTree {
     protected:
-        Data root;
         RBTree* left;
         RBTree* right;
         RBTree* father;
         int size;
     public:
+    Data root;
         RBTree() {
             root.color = black;
             size = 0;
@@ -288,39 +448,54 @@ class RBTree {
                 tree->father->left->root.color = red;
             }
         }
+        /*
         void check_red() {
             if (left) {
                 if (root.color == red && left->root.color == red)
-                    cout << "1";
+                    cout << "w";
                 left->check_red();
             }
             if (right) {
                 if (root.color == red && right->root.color == red)
-                    cout << "1";
+                    cout << "w";
                 right->check_red();
             }
         }
-        void check_size() {
-            if (left) {
-                if (!IsBigger(root.key, left->root.key))
-                    cout << "2";
-                left->check_size();
-            }
-            if (right) {
-                if (IsBigger(root.key, right->root.key))
-                    cout << "2";
-                right->check_size();
+        void check_hight(const int &count) {
+            if (root.color == black) {
+                if (left) {
+                    left->check_hight(count + 1);
+                }
+                if (right) {
+                    right->check_hight(count + 1);
+                }
+                if (!left && !right)
+                    cout << count + 1 << "|";
+            } else {
+                 if (left) {
+                    left->check_hight(count);
+                }
+                if (right) {
+                    right->check_hight(count);
+                }
+                if (!left && !right)
+                    cout << count << "|";
             }
         }
+        */
         void AddNode(Data &em) {
             RBTree* tree = this;
             if (!tree->size) {
                 tree->root = em;
                 tree->root.color = black;
                 tree->size++;
+                puts("OK");
                 return;
             }
-            if (IsBigger(em.key, tree->root.key)) {
+            if (em.key == tree->root.key) {
+                puts("Exist");
+                return;
+            } else if (IsBigger(em.key, tree->root.key)) {
                 if (right) {
                     tree->right->AddNode(em);
                 } else {
@@ -328,6 +503,8 @@ class RBTree {
                     tree->right = newtree;
                     newtree->father = tree;
                     BalanceTreeR(newtree);
+                    puts("OK");
+                    tree->size++;
                 }
             } else {
                  if (left) {
@@ -337,9 +514,10 @@ class RBTree {
                     tree->left = newtree;
                     newtree->father = tree;
                     BalanceTreeL(newtree);
+                    puts("OK");
+                    tree->size++;
                 }
             }
-            tree->size++;
         }
         RBTree* SearchNode(TVector <char> &em) {
             RBTree* search = nullptr;
@@ -363,10 +541,11 @@ class RBTree {
         void DeleteNode(TVector <char> &em) {
             RBTree* tree = SearchNode(em);
             if (!tree) {
+                puts("NoSuchWord");
                 return;
             }
+            puts("OK");
             if (tree->left && !tree->right) {
-                //cout << "0";
                 bool l;
                 bool col = tree->root.color;
                 RBTree* new_node = tree->left;
@@ -398,8 +577,6 @@ class RBTree {
                 if (col == black) {
                     if (new_node->root.color == red) {
                         new_node->root.color = black;
-                    } else if (new_node->father->root.color == red) {
-                        new_node->father->root.color = black;
                     } else {
                          if (l) {
                             BlackBalanceL(new_node);
@@ -412,7 +589,6 @@ class RBTree {
                 return;
             }
             if (!tree->left && tree->right) {
-                //cout << "2";
                 bool col = tree->root.color;
                 bool l;
                 RBTree* new_node = tree->right;
@@ -444,8 +620,6 @@ class RBTree {
                if (col == black) {
                     if (new_node->root.color == red) {
                         new_node->root.color = black;
-                    } else if (new_node->father->root.color == red) {
-                        new_node->father->root.color = black;
                     } else {
                         if (l) {
                             BlackBalanceL(new_node);
@@ -458,27 +632,24 @@ class RBTree {
                 return;
             }
             if (!tree->left && !tree->right) {
-                //cout << "4";
+                bool l = -1;
                 if (!tree->father) {
                     tree->size = 0;
                     tree->root.key.Clear();
-                    tree->root.value.Clear();
+                    //tree->root.value.Clear();
                     return; 
                 }
                 if (tree->root.color == black) {
-                    bool l;
                     if (tree->father->left == tree) {
                         l = 1;
                     } else if (tree->father->right == tree) {
                         l = 0;
                     }
                     if (l) {
-                       BalanceTreeL(tree);
+                       BlackBalanceL(tree);
                        tree->father->left = nullptr;
                     } else {
-                        cout << "in";
-                        BalanceTreeR(tree);
-                        cout << "out";
+                        BlackBalanceR(tree);
                         tree->father->right = nullptr;
                     }
                 } else {
@@ -492,7 +663,6 @@ class RBTree {
                 return;
             }
             if (tree->left && tree->right) {
-                //cout << "3";
                 RBTree* help = tree->right;
                 while (true) {
                     if (!help->left) {
@@ -510,11 +680,14 @@ class RBTree {
             if (tree == nullptr) {
                 return;
             }
+            if (tree->root.color == red) {
+                tree->root.color = black;
+                return;
+            }
             if (!tree->father) {
                 return;
             }
             if (tree->father->right && tree->father->right->root.color == red) {
-                //cout << "1l";
                 RBTree* general = tree->father;
                 RBTree* help1 = general->right->left;
                 RBTree* help2 = general->right->right;
@@ -529,6 +702,7 @@ class RBTree {
                     help3->father = general->left;
                     general->left->root = help;
                     general->left->root.color = red;
+                    BlackBalanceL(tree);
                     return;
                 }
                 if (!help2 && help1) {
@@ -539,6 +713,7 @@ class RBTree {
                     general->left->right = help1;
                     general->left->root = help;
                     general->left->root.color = red;
+                    BlackBalanceL(tree);
                     return;
                 }
                 if (general->right->right) {
@@ -562,12 +737,15 @@ class RBTree {
                 if (help1) {
                     help1->father = general->left;
                 }
+                BlackBalanceL(tree);
             } else if (tree->father->right && tree->father->right->root.color == black && (tree->father->right->left == nullptr || tree->father->right->left->root.color == black) && (tree->father->right->right == nullptr || tree->father->right->right->root.color == black)) {
-                //cout << "2l";
                 tree->father->right->root.color = red;
-                tree->father->root.color = black;
+                if (tree->father->father && tree->father->father->left == tree->father) {
+                    BlackBalanceL(tree->father);
+                } else if (tree->father->father && tree->father->father->right == tree->father) {
+                    BlackBalanceR(tree->father);
+                }
             } else if (tree->father->right && tree->father->right->root.color == black && tree->father->right->left && tree->father->right->left->root.color == red && (tree->father->right->right == nullptr || tree->father->right->right->root.color == black)) {
-                //cout << "3l";
                 RBTree* help1 = tree->father->right->left->right;
                 tree->father->right = tree->father->right->left;
                 tree->father->right->right = tree->father->right->father;
@@ -577,8 +755,10 @@ class RBTree {
                 if (help1) {
                     help1->father = tree->father->right->right;
                 }
+                tree->father->right->root.color = black;
+                tree->father->right->right->root.color = red;
+                BlackBalanceL(tree);
             } else if (tree->father->right && tree->father->right->root.color == black && tree->father->right->right && tree->father->right->right->root.color == red) {
-                //cout << "4l";
                 RBTree* general = tree->father;
                 RBTree* help1 = general->right->left;
                 RBTree* help2 = general->right->right;
@@ -587,6 +767,7 @@ class RBTree {
                 general->root = general->right->root;
                 general->root.color = help.color;
                 general->right->root = general->right->right->root;
+                general->right->root.color = black;
                 general->right->right = general->right->right->right;
                 general->right->left = help2->left;
                 if (general->right->left) {
@@ -605,24 +786,20 @@ class RBTree {
                 if (help1) {
                     help1->father = general->left;
                 }
-            } else {
-                if (tree->father->father && tree->father->father->left == tree) {
-                    BlackBalanceL(tree->father);
-                } else if (tree->father->father && tree->father->father->right == tree) {
-                    BlackBalanceR(tree->father);
-                }
             }
         }
         friend void BlackBalanceR(RBTree* tree) {
-            cout << "go";
             if (tree == nullptr) {
+                return;
+            }
+            if (tree->root.color == red) {
+                tree->root.color = black;
                 return;
             }
             if (!tree->father) {
                 return;
             }
             if (tree->father->left && tree->father->left->root.color == red) {
-                cout << "1r";
                 RBTree* general = tree->father;
                 RBTree* help1 = general->left->right;
                 RBTree* help2 = general->left->left;
@@ -637,6 +814,7 @@ class RBTree {
                     help3->father = general->right;
                     general->right->root = help;
                     general->right->root.color = red;
+                    BlackBalanceR(tree);
                     return;
                 }
                 if (!help2 && help1) {
@@ -647,6 +825,7 @@ class RBTree {
                     general->right->left = help1;
                     general->right->root = help;
                     general->right->root.color = red;
+                    BlackBalanceR(tree);
                     return;
                 }
                 if (general->left->left) {
@@ -670,12 +849,15 @@ class RBTree {
                 if (help1) {
                     help1->father = general->right;
                 }
+                BlackBalanceR(tree);
             } else if (tree->father->left && tree->father->left->root.color == black && (tree->father->left->right == nullptr || tree->father->left->right->root.color == black) && (tree->father->left->left == nullptr || tree->father->left->left->root.color == black)) {
-                cout << "2r";
                 tree->father->left->root.color = red;
-                tree->father->root.color = black;
+                if (tree->father->father && tree->father->father->left == tree->father) {
+                    BlackBalanceL(tree->father);
+                } else if (tree->father->father && tree->father->father->right == tree->father) {
+                    BlackBalanceR(tree->father);
+                }
             } else if (tree->father->left && tree->father->left->root.color == black && tree->father->left->right && tree->father->left->right->root.color == red && (tree->father->left->left == nullptr || tree->father->left->left->root.color == black)) {
-                cout << "3r";
                 RBTree* help1 = tree->father->left->right->left;
                 tree->father->left = tree->father->left->right;
                 tree->father->left->left = tree->father->left->father;
@@ -685,8 +867,10 @@ class RBTree {
                 if (help1) {
                     help1->father = tree->father->left->left;
                 }
+                tree->father->left->root.color = black;
+                tree->father->left->left->root.color = red;
+                BlackBalanceR(tree);
             } else if (tree->father->left && tree->father->left->root.color == black && tree->father->left->left && tree->father->left->left->root.color == red) {
-                cout << "4r";
                 RBTree* general = tree->father;
                 RBTree* help1 = general->left->right;
                 RBTree* help2 = general->left->left;
@@ -695,6 +879,7 @@ class RBTree {
                 general->root = general->left->root;
                 general->root.color = help.color;
                 general->left->root = general->left->left->root;
+                general->left->root.color = black;
                 general->left->left = general->left->left->left;
                 general->left->right = help2->right;
                 if (general->left->right) {
@@ -712,13 +897,6 @@ class RBTree {
                 general->right->left = help1;
                 if (help1) {
                     help1->father = general->right;
-                }
-            } else {
-                cout << "5r";
-                if (tree->father->father && tree->father->father->left == tree) {
-                    BlackBalanceL(tree->father);
-                } else if (tree->father->father && tree->father->father->right == tree) {
-                    BlackBalanceR(tree->father);
                 }
             }
         }
@@ -753,7 +931,58 @@ class RBTree {
         void ShowTree() {
             PrintTree(0);
         }
-        
+        void WriteFile(char* filename) {
+            ofstream os(filename);
+            WriteFileP(filename, os);
+        }
+        void WriteFileP(char* filename, ofstream &os) {
+            os << &(root.key) << ' ';
+            os << &(root.value) << ' ';
+            os << &(root.color) << ' ';
+            os << left << ' ';
+            os << right << ' ';
+            os << father << ' ';
+            if (left) {
+                left->WriteFileP(filename, os);
+            }
+            if (right) {
+                right->WriteFileP(filename, os);
+            }
+        }
+        void ReadFile(char* filename) {
+             ifstream is(filename);
+             
+        }
+        /*
+        RBTree* ReadFileP(ifstream &is) {
+            Data root;
+            char key1[258];
+            is >> key1;
+            char value1[20];
+            is >> value1;
+            bool col;
+            is >> col;
+            
+            RBTree* l;
+            RBTree* r;
+            RBTree* f;
+            is >> l;
+            is >> r;
+            is >> f;
+            delete this;
+            root.key = key1;
+            root.value = value1;
+            root.color = col;
+            left = l;
+            right = r;
+            father = f;
+            if (left) {
+                ReadFileP(is);
+            } if (right) {
+                ReadFileP(is);
+            }
+        }
+        */
         ~RBTree() {
             if (left) {
                 delete left;
@@ -772,58 +1001,74 @@ int Cti(const char &em) {
 }
 
 int main() {
+    ios::sync_with_stdio(false);
     RBTree tree;
     Data get_data;
-    TVector <char> del;
+    char key1[258];
+    RBTree* help = nullptr;
+    unsigned long long value;
+    //char filename[500];
     char ch;
+    int j = 0;
     do {
         ch = getchar();
         switch (ch) {
             case '+':
-                getchar();
-                while (true) {
-                    ch = getchar();
-                    if (ch == ' ') {
-                        break;
-                    }
-                    get_data.key.PushBack(ch);
+                if (scanf(" %s %llu", key1, &value)) {
+                    get_data.key = key1;
+                    get_data.value = value;
+                    tree.AddNode(get_data);
                 }
-                while (true) {
-                    ch = getchar();
-                    if (ch == '\n') {
-                        break;
-                    }
-                    get_data.value.PushBack(Cti(ch));
-                }
-                tree.AddNode(get_data);
-                ClearData(get_data);
                 break;
             case '-':
+                 if (scanf(" %s", key1)) {
+                    get_data.key = key1;
+                    tree.DeleteNode(get_data.key);
+                }
+                break;
+            case '!':
                 getchar();
+                while (true) {
+                    if (getchar() == ' ') {
+                        break;
+                    }
+                }
                 while (true) {
                     ch = getchar();
                     if (ch == '\n') {
                         break;
-                    } else if (ch == ' ') {
-                        while (ch != '\n')
-                            ch = getchar();
-                        break;
                     }
-                    del.PushBack(ch);
+                    //filename[j] = ch;
+                    j++;
                 }
-                tree.DeleteNode(del);
-                del.Clear();
-                break;
-            case '!':
-                break;
-            case 'p':
-                cout << endl;
-                tree.ShowTree();
+                //filename[j] = '\0';
+                //tree.WriteFile(filename);
+               // printf("OK\n");
                 break;
             default:
+                get_data.key.Clear();
+                if (IgnoreReg(ch) < 'a' || IgnoreReg(ch) > 'z') {
+                    break;
+                }
+                while (true) {
+                    get_data.key.PushBack(IgnoreReg(ch));
+                    ch = getchar();
+                    if (ch == '\n' || ch == EOF) {
+                        break;
+                    }
+                }
+                help = tree.SearchNode(get_data.key);
+                if (help) {
+                    printf("OK: %llu\n", help->root.value);
+                } else {
+                    puts("NoSuchWord");
+                }
                 break;
+                getchar();
         }
     } while (ch != EOF);
-    tree.check_red();
+    //tree.ShowTree();
+    //tree.check_red();
+    //tree.check_hight(0);
     return 0;
 }

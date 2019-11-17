@@ -9,8 +9,8 @@ typedef string elements_type;
 
 int main() {
     srand(time(0));
-	int len_str = 3;
-	int count_str = 200000;
+	int len_str = 60;
+	int count_str = 10000;
     int len_num = 8;
 	char* ch = new char[1];
 	elements_type str;

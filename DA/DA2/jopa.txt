@@ -1,0 +1,91 @@
+do {
+        ch = ignore_reg(getchar());
+        switch (ch) {
+            case '+':
+                getchar();
+                while (true) {
+                    ch = getchar();
+                    if (ch == ' ') {
+                        break;
+                    }
+                    get_data.key.PushBack(ignore_reg(ch));
+                }
+                while (true) {
+                    ch = getchar();
+                    if (ch == '\n') {
+                        break;
+                    }
+                    get_data.value.PushBack(Cti(ch));
+                }
+                tree.AddNode(get_data);
+                ClearData(get_data);
+                break;
+            case '-':
+                getchar();
+                while (true) {
+                    ch = getchar();
+                    if (ch == '\n') {
+                        break;
+                    } else if (ch == ' ') {
+                        while (ch != '\n')
+                            ch = getchar();
+                        break;
+                    }
+                    del.PushBack(ignore_reg(ch));
+                }
+                tree.DeleteNode(del);
+                del.Clear();
+                break;
+            case '!':
+                getchar();
+                if (getchar() == 'S') {
+                    while (true) {
+                        if (getchar() == ' ') {
+                            break;
+                        }
+                    }
+                    int j = 0;
+                    while (true) {
+                        ch = getchar();
+                        if (ch == '\n') {
+                            break;
+                        }
+                        filename[j] = ch;
+                        j++;
+                    }
+                    filename[j] = '\0';
+                    tree.WriteFile(filename);
+                    printf("OK\n");
+                }
+                break;
+            case '>':
+                cout << endl;
+                tree.ShowTree();
+                break;
+            case EOF:
+                break;
+            default:
+                if (ignore_reg(ch) < 'a' || ignore_reg(ch) > 'z') {
+                    break;
+                }
+                while (true) {
+                    del.PushBack(ignore_reg(ch));
+                    ch = getchar();
+                    if (ch == '\n' || ch == EOF) {
+                        break;
+                    }
+                }
+                RBTree* help = tree.SearchNode(del);
+                if (help) {
+                    printf("OK: ");
+                    for (int i = 0; i < help->root.value.Len(); i++) {
+                        printf("%d", help->root.value[i]);
+                    }
+                } else {
+                    printf("NoSuchWord");
+                }
+                putchar('\n');
+                del.Clear();
+                break;
+        }
+    } while (ch != EOF);
