@@ -75,7 +75,7 @@ class TVector {
                 vector[i] = b.vector[i];
             }
         }
-        bool operator == (const TVector <T> &b) {
+        bool operator == (TVector <T> &b) {
             if ((*this).Len() == b.Len()) {
                 for (int i = 0; i < b.Len(); i++) {
                     if ((*this)[i] != b[i]) 
