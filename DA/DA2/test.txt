@@ -1,14 +1,1 @@
-+ word 426
-+ abv 536
-+ fkewl 5463
-+ de 5436
-+ de 4536
-+ re 23426
-- abc
-- abc
-- abv
-+ de 3246
-- de
-+ word 436
-- word
-
+ejk 5436 0 2 1 1 abc 435 1 1 0 0 word 45256 1 2 0 0 
