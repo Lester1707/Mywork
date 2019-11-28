@@ -8,11 +8,10 @@
 #include <pthread.h>
 #include <string>
 #include <fstream>
-#include "myvector.hpp"
 
 using namespace std;
 
-const int MAX_THREADS = 7516;
+const int MAX_THREADS = 6431;
 pthread_mutex_t mut;
 
 struct arguments_t {
@@ -43,7 +42,7 @@ bool is_bigger(string &a, string &b) {
 
 void print_v(vector <string> &a) {
 	for (unsigned int i = 0; i < a.size(); i++) {
-		cout << a[i] << " ";
+		cout << a[i] << ' ';
 	}
 	cout << "\n";
 }
@@ -86,32 +85,41 @@ void* bitonic_sort_t(void* arg) {
 		int k = cnt/2;
 		arguments_t ar2 = {ar1->vec, low, k, ar1->pth, ar1->limit, 1};
 		arguments_t ar3 = {ar1->vec, low + k, k, ar1->pth, ar1->limit, 0};
+        //cout << "a" << endl;
 		pthread_mutex_lock(&mut);
-		if ((int) ar1->pth->size() >= ar1->limit) {
-			pthread_mutex_unlock(&mut);
+		if ((int)ar1->pth->size() >= ar1->limit) {
 			bitonic_sort_h(ar1->vec, low, k, 1);
 			bitonic_sort_h(ar1->vec, low + k, k, 0);
 			half_cleaner(ar1->vec, ar1->low, ar1->cnt, ar1->dir);
+            pthread_mutex_unlock(&mut);
 			return NULL;
 		}
+        //cout << "b" << endl;
 		ar1->pth->push_back(t1);
 		pthread_mutex_unlock(&mut);
-		//cout << ar1->pth->size();
 		pthread_create(&t1, NULL, bitonic_sort_t, &ar2);
+        //cout << "c" << endl;
 		pthread_mutex_lock(&mut);
-		if ((int) ar1->pth->size() >= ar1->limit) {
-			pthread_mutex_unlock(&mut);
+		if ((int)ar1->pth->size() >= ar1->limit) {
+            pthread_mutex_unlock(&mut);
 			pthread_join(t1, NULL);
+            pthread_mutex_lock(&mut);
 			bitonic_sort_h(ar1->vec, low + k, k, 0);
 			half_cleaner(ar1->vec, ar1->low, ar1->cnt, ar1->dir);
+            pthread_mutex_unlock(&mut);
 			return NULL;
 		}
+        //cout << "d" << endl;
 		ar1->pth->push_back(t2);
 		pthread_mutex_unlock(&mut);
 		pthread_create(&t2, NULL, bitonic_sort_t, &ar3);
 		pthread_join(t1, NULL);
 		pthread_join(t2, NULL);
+        //cout << "v" << endl;
+        pthread_mutex_lock(&mut);
 		half_cleaner(ar1->vec, ar1->low, ar1->cnt, ar1->dir);
+        pthread_mutex_unlock(&mut);
+        //cout << "u" << endl;
 	}
 	return NULL;
 }
@@ -133,21 +141,21 @@ int pow2(int a) {
 } 
 
 string modern_vector(vector <string> &a) {
-	int i = 0;
-	while ((int)a.size() > pow2(i)) {
-		i++;
+	int j = 0;
+	while ((int)(a.size()) > pow2(j)) {
+		j++;
 	}
-	if ((int)a.size() == pow2(i) || a.size() == 0) {
+	if ((int)a.size() == pow2(j) || a.size() == 0) {
 		return "";
 	}
-	string max = a[i];
+	string max = a[0];
 	for (int i = 0; i < (int) a.size(); i++) {
 		if (is_bigger(a[i], max)) {
 			max = a[i];
 		}
 	}
 	max.append("a");
-	while ((int)a.size() != pow2(i)) {
+	while ((int)a.size() != pow2(j)) {
 		a.push_back(max);
 	}
 	return max;
@@ -171,6 +179,7 @@ int main() {
 	} else if (lim == 0) {
 		cout << "start sort: ";
 		print_v(vec);
+        cout << "5555";
 		max = modern_vector(vec);
 		bitonic_sort_h(&vec, 0, (int)vec.size(), 1);
 		while (vec.size() != min) {
@@ -192,7 +201,7 @@ int main() {
 	cout << "start sort: ";
 	print_v(vec);
 	max = modern_vector(vec);
-	cout << "out sort: ";
+	cout << "out sort: " << endl;
 	bitonic_sort(&vec, &threads, lim);
 	while (vec.size() != min) {
 		for (int i = 0; i < (int)vec.size(); i++) {
