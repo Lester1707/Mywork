@@ -1,33 +1,80 @@
 #include "tree.c"
+#include "tree.h"
 #include <stdio.h>
 #include <dlfcn.h>
 #include <string.h>
 
-void invoke_method(char *method, int argument)
+void add_method(Node* argument1, int argument2)
 {
 	void *dl_handle;
-	//int (*func)(int);
+	void (*func)(Node*, int);
 	char *error;
  
-	//Открываем совместно используемую библиотеку
-	dl_handle = dlopen("libtree.so", RTLD_LAZY );
+	dl_handle = dlopen("libtree.so", RTLD_LAZY);
 	if (!dl_handle) {
 		printf("!!! %s\n", dlerror());
 		return;
 	}
  
-  /* Находим адрес функции в библиотеке */
-	dlsym(dl_handle, method);
+	func = dlsym(dl_handle, "add_node");
 	error = dlerror();
 	if (error != NULL) {
 		printf("!!! %s\n", error);
 		return;
 	}
 	
-  /* Вызываем функцию по найденному адресу и печатаем результат */
-	(*func)(argument);
+	func(argument1, argument2);
+
+	dlclose( dl_handle );
+	return;
+}
+
+void delete_method(Node* argument1, int argument2)
+{
+	void *dl_handle;
+	Node* (*func)(Node*, int);
+	char *error;
  
-  /* Закрываем объект */
+	dl_handle = dlopen("libtree.so", RTLD_LAZY);
+	if (!dl_handle) {
+		printf("!!! %s\n", dlerror());
+		return;
+	}
+ 
+	func = dlsym(dl_handle, "delete_node");
+	error = dlerror();
+	if (error != NULL) {
+		printf("!!! %s\n", error);
+		return;
+	}
+	
+	func(argument1, argument2);
+
+	dlclose( dl_handle );
+	return;
+}
+
+void print_method(Node* argument1)
+{
+	void *dl_handle;
+	void (*func)(Node*);
+	char *error;
+ 
+	dl_handle = dlopen("libtree.so", RTLD_LAZY);
+	if (!dl_handle) {
+		printf("!!! %s\n", dlerror());
+		return;
+	}
+ 
+	func = dlsym(dl_handle, "print_tree");
+	error = dlerror();
+	if (error != NULL) {
+		printf("!!! %s\n", error);
+		return;
+	}
+	
+	func(argument1);
+
 	dlclose( dl_handle );
 	return;
 }
@@ -38,7 +85,7 @@ int main()
 	char c;
 	int value;
 	int j = 0;
-	printf("Choose event!\n\tprint r to the stop program\n\tprint a to add node\n\tprint p to print tree\n\tprint d to delete any node\n\tprint l to know tree is list or no\n");
+	printf("Choose event!\n\tprint r to the stop program\n\tprint a to add node\n\tprint p to print tree\n\tprint d to delete any node\n");
 	while (scanf("%c", &c)) {
 		switch(c) {
 			case('a'):
@@ -48,7 +95,7 @@ int main()
 					a = create_node(value);
 					j = 1;
 				} else {
-					add_node(a, value);	
+					add_method(a, value);	
 				}
 				printf("Choose event!\n");
 				break;
@@ -63,7 +110,7 @@ int main()
 				if (value == a->data) {
 					a = delete_node(a, value);
 				} else {
-					delete_node(a, value);
+					delete_method(a, value);
 				}
 				printf("Choose event!\n");
 				break;
@@ -73,22 +120,13 @@ int main()
 					printf("Choose event!\n");
 					break;
 				}
-				print_tree(a);
+				print_method(a);
 				printf("Choose event!\n");
 				break;
 			case('r'):
 				if (j != 0)
 					delete_tree(a);
 				return 0;
-			case('l'):
-				if (j == 0) {
-					printf("tree is empety!\n");
-					printf("Choose event!\n");
-					break;
-				}
-				printf("%d\n", list_is_tree(a));
-				printf("Choose event!\n");
-				break;
 			default:
 				printf("Wrong format!\n");
 				printf("Choose event!\n");
