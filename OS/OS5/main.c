@@ -9,7 +9,7 @@ void invoke_method(char *method, int argument)
 	//int (*func)(int);
 	char *error;
  
-  /* Открываем совместно используемую библиотеку */
+	//Открываем совместно используемую библиотеку
 	dl_handle = dlopen("libtree.so", RTLD_LAZY );
 	if (!dl_handle) {
 		printf("!!! %s\n", dlerror());
