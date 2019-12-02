@@ -1,5 +1,36 @@
 #include "tree.c"
 #include <stdio.h>
+#include <dlfcn.h>
+#include <string.h>
+
+void invoke_method(char *method, int argument)
+{
+	void *dl_handle;
+	//int (*func)(int);
+	char *error;
+ 
+  /* Открываем совместно используемую библиотеку */
+	dl_handle = dlopen("libtree.so", RTLD_LAZY );
+	if (!dl_handle) {
+		printf("!!! %s\n", dlerror());
+		return;
+	}
+ 
+  /* Находим адрес функции в библиотеке */
+	dlsym(dl_handle, method);
+	error = dlerror();
+	if (error != NULL) {
+		printf("!!! %s\n", error);
+		return;
+	}
+	
+  /* Вызываем функцию по найденному адресу и печатаем результат */
+	(*func)(argument);
+ 
+  /* Закрываем объект */
+	dlclose( dl_handle );
+	return;
+}
 
 int main()
 {
