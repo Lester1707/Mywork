@@ -1,0 +1,20 @@
+ilya@ilya-VirtualBox:~/Mywork/DA/DA2$ g++ -Wall DA2ready.cpp
+ilya@ilya-VirtualBox:~/Mywork/DA/DA2$ valgrind --tool=callgrind ./a.out < test.txt
+....
+NoSuchWord
+NoSuchWord
+NoSuchWord
+NoSuchWord
+OK
+NoSuchWord
+NoSuchWord
+OK
+NoSuchWord
+NoSuchWord
+==6705== 
+==6705== Events    : Ir
+==6705== Collected : 2175379192
+==6705== 
+==6705== I   refs:      2,175,379,192
+
+
