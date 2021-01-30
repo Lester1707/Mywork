@@ -1,0 +1,10 @@
+﻿  pch.cpp
+  LongAr.cpp
+C:\Users\kupts\source\repos\LongAr\LongAr\LongAr.cpp(176,29): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+C:\Users\kupts\source\repos\LongAr\LongAr\LongAr.cpp(239,46): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\kupts\source\repos\LongAr\LongAr\LongAr.cpp(252,46): warning C4018: <: несоответствие типов со знаком и без знака
+  Создание кода
+  Previous IPDB not found, fall back to full compilation.
+  All 313 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  LongAr.vcxproj -> C:\Users\kupts\source\repos\LongAr\Release\LongAr.exe
