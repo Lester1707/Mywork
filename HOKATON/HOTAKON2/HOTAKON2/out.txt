@@ -1,0 +1,1044 @@
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+---> 0: parsing coord (4,6)
+parsing vec 1
+coord (4,7.2) isn't close to current
+diff is 1.2000000000000002, delta is 1.1
+coord (5.2,8.6) isn't close to current
+diff is 2.8635642126552705, delta is 1.1
+parsing vec 2
+coord (5.2,8.6) isn't close to current
+diff is 2.8635642126552705, delta is 1.1
+coord (4.1,9.7) isn't close to current
+diff is 3.7013511046643486, delta is 1.1
+parsing vec 3
+coord (5.2,8.6) isn't close to current
+diff is 2.8635642126552705, delta is 1.1
+coord (7.5,8.7) isn't close to current
+diff is 4.420407221060068, delta is 1.1
+parsing vec 4 coord (7.5,8.7) isn't close to current
+diff is 4.420407221060068, delta is 1.1
+coord (8.3,7.5) isn't close to current
+diff is 4.5541190146942805, delta is 1.1
+parsing vec 5
+coord (8.3,7.5) isn't close to current
+diff is 4.5541190146942805, delta is 1.1
+coord (8.3,5.7) isn't close to current
+diff is 4.310452412450462, delta is 1.1
+parsing vec 6
+coord (4,6) is close to current
+diff is 0.0, delta is 1.1
+coord (5,4.5) isn't close to current
+diff is 1.8027756377319946, delta is 1.1
+parsing vec 7
+coord (5,4.5) isn't close to current
+diff is 1.8027756377319946, delta is 1.1
+coord (7.2,4.5) isn't close to current
+diff is 3.534119409414459, delta is 1.1
+parsing vec 8
+coord (7.2,4.5) isn't close to current
+diff is 3.534119409414459, delta is 1.1
+coord (8.3,5.7) isn't close to current
+diff is 4.310452412450462, delta is 1.1
+parsing vec 9
+coord (4.5,7.3) isn't close to current
+diff is 1.3928388277184118, delta is 1.1
+coord (5.25,8.2) isn't close to current
+diff is 2.5303161857759986, delta is 1.1
+parsing vec 10
+coord (4.5,6.05) is close to current
+diff is 0.5024937810560445, delta is 1.1
+coord (5.1,5.1) isn't close to current
+diff is 1.4212670403551895, delta is 1.1
+parsing vec 11
+coord (7.2,5.2) isn't close to current
+diff is 3.298484500494129, delta is 1.1
+coord (7.9,6) isn't close to current
+diff is 3.9000000000000004, delta is 1.1
+parsing vec 12
+coord (7.25,8.25) isn't close to current
+diff is 3.952847075210474, delta is 1.1
+coord (7.75,7.5) isn't close to current
+diff is 4.038873605350878, delta is 1.1
+parsing vec 13
+coord (8.3,5.9) isn't close to current
+diff is 4.301162633521314, delta is 1.1
+coord (9.9,5) isn't close to current
+diff is 5.984145720150872, delta is 1.1
+parsing vec 14
+coord (10.9,5) isn't close to current
+diff is 6.972087205421344, delta is 1.1
+coord (12.1,6) isn't close to current
+diff is 8.1, delta is 1.1
+parsing vec 15
+coord (12.1,6) isn't close to current
+diff is 8.1, delta is 1.1
+coord (12,7.2) isn't close to current
+diff is 8.089499366462674, delta is 1.1
+parsing vec 16
+coord (12.1,6) isn't close to current
+diff is 8.1, delta is 1.1
+coord (13.1,5.5) isn't close to current
+diff is 9.113725912051557, delta is 1.1
+parsing vec 17
+coord (13.1,5) isn't close to current
+diff is 9.154780172128657, delta is 1.1
+coord (13.1,3.8) isn't close to current
+diff is 9.362157870918434, delta is 1.1
+parsing vec 18
+coord (13.55,5) isn't close to current
+diff is 9.60221328652931, delta is 1.1
+coord (13.55,3.8) isn't close to current
+diff is 9.800127550190355, delta is 1.1
+parsing vec 19
+coord (13.55,5.5) isn't close to current
+diff is 9.563080047767038, delta is 1.1
+coord (14.5,6.7) isn't close to current
+diff is 10.523307464861036, delta is 1.1
+1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+---> 0: parsing coord (4,7.2)
+parsing vec 1
+coord (4,7.2) is close to current
+diff is 0.0, delta is 1.1
+coord (5.2,8.6) isn't close to current
+diff is 1.843908891458577, delta is 1.1
+parsing vec 2
+coord (5.2,8.6) isn't close to current
+diff is 1.843908891458577, delta is 1.1
+coord (4.1,9.7) isn't close to current
+diff is 2.50199920063936, delta is 1.1
+parsing vec 3
+coord (5.2,8.6) isn't close to current
+diff is 1.843908891458577, delta is 1.1
+coord (7.5,8.7) isn't close to current
+diff is 3.807886552931954, delta is 1.1
+parsing vec 4
+coord (7.5,8.7) isn't close to current
+diff is 3.807886552931954, delta is 1.1
+coord (8.3,7.5) isn't close to current
+diff is 4.310452412450462, delta is 1.1
+parsing vec 5
+coord (8.3,7.5) isn't close to current
+diff is 4.310452412450462, delta is 1.1
+coord (8.3,5.7) isn't close to current
+diff is 4.5541190146942805, delta is 1.1
+parsing vec 6
+coord (5,4.5) isn't close to current
+diff is 2.879236009777594, delta is 1.1
+parsing vec 7
+coord (5,4.5) isn't close to current
+diff is 2.879236009777594, delta is 1.1
+coord (7.2,4.5) isn't close to current
+diff is 4.186884283091665, delta is 1.1
+parsing vec 8
+coord (7.2,4.5) isn't close to current
+diff is 4.186884283091665, delta is 1.1
+coord (8.3,5.7) isn't close to current
+diff is 4.5541190146942805, delta is 1.1
+parsing vec 9
+coord (4.5,7.3) is close to current
+diff is 0.5099019513592784, delta is 1.1
+coord (5.25,8.2) isn't close to current
+diff is 1.6007810593582117, delta is 1.1
+parsing vec 10
+coord (5.1,5.1) isn't close to current
+diff is 2.3706539182259396, delta is 1.1
+parsing vec 11
+coord (7.2,5.2) isn't close to current
+diff is 3.773592452822642, delta is 1.1
+coord (7.9,6) isn't close to current
+diff is 4.080441152620633, delta is 1.1
+parsing vec 12
+coord (7.25,8.25) isn't close to current
+diff is 3.415406271587613, delta is 1.1
+coord (7.75,7.5) isn't close to current
+diff is 3.761980861195336, delta is 1.1
+parsing vec 13
+coord (8.3,5.9) isn't close to current
+diff is 4.492215489043241, delta is 1.1
+coord (9.9,5) isn't close to current
+diff is 6.296824596572467, delta is 1.1
+parsing vec 14
+coord (10.9,5) isn't close to current
+diff is 7.242237223399964, delta is 1.1
+coord (12.1,6) isn't close to current
+diff is 8.188406438373708, delta is 1.1
+parsing vec 15
+coord (12.1,6) isn't close to current
+diff is 8.188406438373708, delta is 1.1
+coord (12,7.2) isn't close to current
+diff is 8.0, delta is 1.1
+parsing vec 16
+coord (12.1,6) isn't close to current
+diff is 8.188406438373708, delta is 1.1
+coord (13.1,5.5) isn't close to current
+diff is 9.257429448826493, delta is 1.1
+parsing vec 17
+coord (13.1,5) isn't close to current
+diff is 9.362157870918434, delta is 1.1
+coord (13.1,3.8) isn't close to current
+diff is 9.714422267947796, delta is 1.1
+parsing vec 18
+coord (13.55,5) isn't close to current
+diff is 9.800127550190355, delta is 1.1
+coord (13.55,3.8) isn't close to current
+diff is 10.137184027134953, delta is 1.1
+parsing vec 19
+coord (13.55,5.5) isn't close to current
+diff is 9.700128865123391, delta is 1.1
+coord (14.5,6.7) isn't close to current
+diff is 10.51189802081432, delta is 1.1
+1,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+---> 1: parsing coord (5.2,8.6)
+parsing vec 2
+coord (5.2,8.6) is close to current
+diff is 0.0, delta is 1.1
+coord (4.1,9.7) isn't close to current
+diff is 1.5556349186104046, delta is 1.1
+parsing vec 3
+coord (5.2,8.6) is close to current
+diff is 0.0, delta is 1.1
+coord (7.5,8.7) isn't close to current
+diff is 2.3021728866442674, delta is 1.1
+parsing vec 4
+coord (7.5,8.7) isn't close to current
+diff is 2.3021728866442674, delta is 1.1
+coord (8.3,7.5) isn't close to current
+diff is 3.2893768406797057, delta is 1.1
+parsing vec 5
+coord (8.3,7.5) isn't close to current
+diff is 3.2893768406797057, delta is 1.1
+coord (8.3,5.7) isn't close to current
+diff is 4.244997055358225, delta is 1.1
+parsing vec 6
+coord (5,4.5) isn't close to current
+diff is 4.104875150354758, delta is 1.1
+parsing vec 7
+coord (5,4.5) isn't close to current
+diff is 4.104875150354758, delta is 1.1
+coord (7.2,4.5) isn't close to current
+diff is 4.561797891182818, delta is 1.1
+parsing vec 8
+coord (7.2,4.5) isn't close to current
+diff is 4.561797891182818, delta is 1.1
+coord (8.3,5.7) isn't close to current
+diff is 4.244997055358225, delta is 1.1
+parsing vec 9
+coord (5.25,8.2) is close to current
+diff is 0.4031128874149278, delta is 1.1
+parsing vec 10
+coord (5.1,5.1) isn't close to current
+diff is 3.5014282800023193, delta is 1.1
+parsing vec 11
+coord (7.2,5.2) isn't close to current
+diff is 3.9446165846632035, delta is 1.1
+coord (7.9,6) isn't close to current
+diff is 3.7483329627982624, delta is 1.1
+parsing vec 12
+coord (7.25,8.25) isn't close to current
+diff is 2.079663434308542, delta is 1.1
+coord (7.75,7.5) isn't close to current
+diff is 2.777138815399763, delta is 1.1
+parsing vec 13
+coord (8.3,5.9) isn't close to current
+diff is 4.110960958218893, delta is 1.1
+coord (9.9,5) isn't close to current
+diff is 5.920304046246273, delta is 1.1
+parsing vec 14
+coord (10.9,5) isn't close to current
+diff is 6.74166151627327, delta is 1.1
+coord (12.1,6) isn't close to current
+diff is 7.37360156233031, delta is 1.1
+parsing vec 15
+coord (12.1,6) isn't close to current
+diff is 7.37360156233031, delta is 1.1
+coord (12,7.2) isn't close to current
+diff is 6.942621983083912, delta is 1.1
+parsing vec 16
+coord (12.1,6) isn't close to current
+diff is 7.37360156233031, delta is 1.1
+coord (13.1,5.5) isn't close to current
+diff is 8.486459803710849, delta is 1.1
+parsing vec 17
+coord (13.1,5) isn't close to current
+diff is 8.681589716175258, delta is 1.1
+coord (13.1,3.8) isn't close to current
+diff is 9.243916918709298, delta is 1.1
+parsing vec 18
+coord (13.55,5) isn't close to current
+diff is 9.092991806880727, delta is 1.1
+coord (13.55,3.8) isn't close to current
+diff is 9.631329087929663, delta is 1.1
+parsing vec 19
+coord (13.55,5.5) isn't close to current
+diff is 8.906879363727793, delta is 1.1
+coord (14.5,6.7) isn't close to current
+diff is 9.49210198006743, delta is 1.1
+1,1,1,1,1,0,1,0,0,0,0,0,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,1,1,1,1,0,1,0,0,0,0,0,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+---> 2: parsing coord (4.1,9.7)
+parsing vec 3
+coord (7.5,8.7) isn't close to current
+diff is 3.5440090293338704, delta is 1.1
+parsing vec 4
+coord (7.5,8.7) isn't close to current
+diff is 3.5440090293338704, delta is 1.1
+coord (8.3,7.5) isn't close to current
+diff is 4.741307836451879, delta is 1.1
+parsing vec 5
+coord (8.3,7.5) isn't close to current
+diff is 4.741307836451879, delta is 1.1
+coord (8.3,5.7) isn't close to current
+diff is 5.8, delta is 1.1
+parsing vec 6
+coord (5,4.5) isn't close to current
+diff is 5.277309920783504, delta is 1.1
+parsing vec 7
+coord (5,4.5) isn't close to current
+diff is 5.277309920783504, delta is 1.1
+coord (7.2,4.5) isn't close to current
+diff is 6.053924347066124, delta is 1.1
+parsing vec 8
+coord (7.2,4.5) isn't close to current
+diff is 6.053924347066124, delta is 1.1
+coord (8.3,5.7) isn't close to current
+diff is 5.8, delta is 1.1
+parsing vec 9
+parsing vec 10
+coord (5.1,5.1) isn't close to current
+diff is 4.707440918375927, delta is 1.1
+parsing vec 11
+coord (7.2,5.2) isn't close to current
+diff is 5.4644304369257, delta is 1.1
+coord (7.9,6) isn't close to current
+diff is 5.303772242470448, delta is 1.1
+parsing vec 12
+coord (7.25,8.25) isn't close to current
+diff is 3.4677081768799405, delta is 1.1
+coord (7.75,7.5) isn't close to current
+diff is 4.261748467472007, delta is 1.1
+parsing vec 13
+coord (8.3,5.9) isn't close to current
+diff is 5.663920903402518, delta is 1.1
+coord (9.9,5) isn't close to current
+diff is 7.465252842335617, delta is 1.1
+parsing vec 14
+coord (10.9,5) isn't close to current
+diff is 8.266196223173026, delta is 1.1
+coord (12.1,6) isn't close to current
+diff is 8.814193099768124, delta is 1.1
+parsing vec 15
+coord (12.1,6) isn't close to current
+diff is 8.814193099768124, delta is 1.1
+coord (12,7.2) isn't close to current
+diff is 8.286132994346639, delta is 1.1
+parsing vec 16
+coord (12.1,6) isn't close to current
+diff is 8.814193099768124, delta is 1.1
+coord (13.1,5.5) isn't close to current
+diff is 9.931767214348108, delta is 1.1
+parsing vec 17
+coord (13.1,5) isn't close to current
+diff is 10.15332457867865, delta is 1.1
+coord (13.1,3.8) isn't close to current
+diff is 10.761505470890214, delta is 1.1
+parsing vec 18
+coord (13.55,5) isn't close to current
+diff is 10.554264540933206, delta is 1.1
+coord (13.55,3.8) isn't close to current
+diff is 11.140578979568343, delta is 1.1
+parsing vec 19
+coord (13.55,5.5) isn't close to current
+diff is 10.34130069188591, delta is 1.1
+coord (14.5,6.7) isn't close to current
+diff is 10.824047302187846, delta is 1.1
+letter is close
+assigning coord sum to letter center
+coord (14.5,6.7) isn't close to current
+diff is 10.824047302187846, delta is 1.1
+1,1,1,1,1,1,1,0,0,0,0,0,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,1,1,1,1,1,1,0,0,0,0,0,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+---> 3: parsing coord (7.5,8.7)
+parsing vec 4
+coord (7.5,8.7) is close to current
+diff is 0.0, delta is 1.1
+coord (8.3,7.5) isn't close to current
+diff is 1.4422205101855956, delta is 1.1
+parsing vec 5
+coord (8.3,7.5) isn't close to current
+diff is 1.4422205101855956, delta is 1.1
+coord (8.3,5.7) isn't close to current
+diff is 3.104834939252004, delta is 1.1
+parsing vec 6
+coord (5,4.5) isn't close to current
+diff is 4.887739763939974, delta is 1.1
+parsing vec 7
+coord (5,4.5) isn't close to current
+diff is 4.887739763939974, delta is 1.1
+coord (7.2,4.5) isn't close to current
+diff is 4.210700654285459, delta is 1.1
+parsing vec 8
+coord (7.2,4.5) isn't close to current
+diff is 4.210700654285459, delta is 1.1
+coord (8.3,5.7) isn't close to current
+diff is 3.104834939252004, delta is 1.1
+parsing vec 9
+parsing vec 10
+coord (5.1,5.1) isn't close to current
+diff is 4.326661530556787, delta is 1.1
+parsing vec 11
+coord (7.2,5.2) isn't close to current
+diff is 3.5128336140500585, delta is 1.1
+coord (7.9,6) isn't close to current
+diff is 2.7294688127912354, delta is 1.1
+parsing vec 12
+coord (7.25,8.25) is close to current
+diff is 0.5147815070493493, delta is 1.1
+coord (7.75,7.5) isn't close to current
+diff is 1.2257650672131257, delta is 1.1
+parsing vec 13
+coord (8.3,5.9) isn't close to current
+diff is 2.9120439557122064, delta is 1.1
+coord (9.9,5) isn't close to current
+diff is 4.410215414239989, delta is 1.1
+parsing vec 14
+coord (10.9,5) isn't close to current
+diff is 5.024937810560445, delta is 1.1
+coord (12.1,6) isn't close to current
+diff is 5.333854141237834, delta is 1.1
+parsing vec 15
+coord (12.1,6) isn't close to current
+diff is 5.333854141237834, delta is 1.1
+coord (12,7.2) isn't close to current
+diff is 4.743416490252569, delta is 1.1
+parsing vec 16
+coord (12.1,6) isn't close to current
+diff is 5.333854141237834, delta is 1.1
+coord (13.1,5.5) isn't close to current
+diff is 6.449806198638839, delta is 1.1
+parsing vec 17
+coord (13.1,5) isn't close to current
+diff is 6.711929677819933, delta is 1.1
+coord (13.1,3.8) isn't close to current
+diff is 7.441102068914254, delta is 1.1
+parsing vec 18
+coord (13.55,5) isn't close to current
+diff is 7.091720524668186, delta is 1.1
+coord (13.55,3.8) isn't close to current
+diff is 7.785403008194245, delta is 1.1
+parsing vec 19
+coord (13.55,5.5) isn't close to current
+diff is 6.844158092855541, delta is 1.1
+coord (14.5,6.7) isn't close to current
+diff is 7.280109889280518, delta is 1.1
+1,1,1,1,1,1,1,1,1,0,0,0,1,0,0,0,0,0,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,1,1,1,1,1,1,1,1,0,0,0,1,0,0,0,0,0,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+---> 4: parsing coord (8.3,7.5)
+parsing vec 5
+coord (8.3,7.5) is close to current
+diff is 0.0, delta is 1.1
+coord (8.3,5.7) isn't close to current
+diff is 1.7999999999999998, delta is 1.1
+parsing vec 6
+coord (5,4.5) isn't close to current
+diff is 4.459820624195552, delta is 1.1
+parsing vec 7
+coord (5,4.5) isn't close to current
+diff is 4.459820624195552, delta is 1.1
+coord (7.2,4.5) isn't close to current
+diff is 3.1953090617340916, delta is 1.1
+parsing vec 8
+coord (7.2,4.5) isn't close to current
+diff is 3.1953090617340916, delta is 1.1
+coord (8.3,5.7) isn't close to current
+diff is 1.7999999999999998, delta is 1.1
+parsing vec 9
+parsing vec 10
+coord (5.1,5.1) isn't close to current
+diff is 4.000000000000001, delta is 1.1
+parsing vec 11
+coord (7.2,5.2) isn't close to current
+diff is 2.5495097567963922, delta is 1.1
+coord (7.9,6) isn't close to current
+diff is 1.5524174696260025, delta is 1.1
+parsing vec 12
+coord (7.75,7.5) is close to current
+diff is 0.5500000000000007, delta is 1.1
+parsing vec 13
+coord (8.3,5.9) isn't close to current
+diff is 1.5999999999999996, delta is 1.1
+coord (9.9,5) isn't close to current
+diff is 2.9681644159311658, delta is 1.1
+parsing vec 14
+coord (10.9,5) isn't close to current
+diff is 3.6069377593742864, delta is 1.1
+coord (12.1,6) isn't close to current
+diff is 4.085339643163098, delta is 1.1
+parsing vec 15
+coord (12.1,6) isn't close to current
+diff is 4.085339643163098, delta is 1.1
+coord (12,7.2) isn't close to current
+diff is 3.712142238654116, delta is 1.1
+parsing vec 16
+coord (12.1,6) isn't close to current
+diff is 4.085339643163098, delta is 1.1
+coord (13.1,5.5) isn't close to current
+diff is 5.199999999999999, delta is 1.1
+parsing vec 17
+coord (13.1,5) isn't close to current
+diff is 5.412023651093922, delta is 1.1
+coord (13.1,3.8) isn't close to current
+diff is 6.060528029800703, delta is 1.1
+parsing vec 18
+coord (13.55,5) isn't close to current
+diff is 5.814851674806504, delta is 1.1
+coord (13.55,3.8) isn't close to current
+diff is 6.422810911119835, delta is 1.1
+parsing vec 19
+coord (13.55,5.5) isn't close to current
+diff is 5.618051263561058, delta is 1.1
+coord (14.5,6.7) isn't close to current
+diff is 6.251399843235113, delta is 1.1
+1,1,1,1,1,1,1,1,1,1,1,0,1,0,0,0,0,0,1,1,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,1,1,1,1,1,1,1,1,1,1,0,1,0,0,0,0,0,1,1,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+---> 5: parsing coord (8.3,5.7)
+parsing vec 6
+coord (5,4.5) isn't close to current
+diff is 3.5114099732158883, delta is 1.1
+parsing vec 7
+coord (5,4.5) isn't close to current
+diff is 3.5114099732158883, delta is 1.1
+coord (7.2,4.5) isn't close to current
+diff is 1.627882059609971, delta is 1.1
+parsing vec 8
+coord (7.2,4.5) isn't close to current
+diff is 1.627882059609971, delta is 1.1
+coord (8.3,5.7) is close to current
+diff is 0.0, delta is 1.1
+parsing vec 9
+parsing vec 10
+coord (5.1,5.1) isn't close to current
+diff is 3.2557641192199425, delta is 1.1
+parsing vec 11
+coord (7.2,5.2) isn't close to current
+diff is 1.2083045973594577, delta is 1.1
+coord (7.9,6) is close to current
+diff is 0.5000000000000001, delta is 1.1
+parsing vec 12
+parsing vec 13
+coord (8.3,5.9) is close to current
+diff is 0.20000000000000018, delta is 1.1
+coord (9.9,5) isn't close to current
+diff is 1.7464249196572978, delta is 1.1
+parsing vec 14
+coord (10.9,5) isn't close to current
+diff is 2.692582403567252, delta is 1.1
+coord (12.1,6) isn't close to current
+diff is 3.8118237105091826, delta is 1.1
+parsing vec 15
+coord (12.1,6) isn't close to current
+diff is 3.8118237105091826, delta is 1.1
+coord (12,7.2) isn't close to current
+diff is 3.992492955535425, delta is 1.1
+parsing vec 16
+coord (12.1,6) isn't close to current
+diff is 3.8118237105091826, delta is 1.1
+coord (13.1,5.5) isn't close to current
+diff is 4.8041648597857245, delta is 1.1
+parsing vec 17
+coord (13.1,5) isn't close to current
+diff is 4.85077313425396, delta is 1.1
+coord (13.1,3.8) isn't close to current
+diff is 5.162363799656122, delta is 1.1
+parsing vec 18
+coord (13.55,5) isn't close to current
+diff is 5.296461082647545, delta is 1.1
+coord (13.55,3.8) isn't close to current
+diff is 5.583233829959122, delta is 1.1
+parsing vec 19
+coord (13.55,5.5) isn't close to current
+diff is 5.253808142671371, delta is 1.1
+coord (14.5,6.7) isn't close to current
+diff is 6.280127387243032, delta is 1.1
+1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+---> 6: parsing coord (5,4.5)
+parsing vec 7
+coord (5,4.5) is close to current
+diff is 0.0, delta is 1.1
+coord (7.2,4.5) isn't close to current
+diff is 2.2, delta is 1.1
+parsing vec 8
+coord (7.2,4.5) isn't close to current
+diff is 2.2, delta is 1.1
+parsing vec 9
+parsing vec 10
+coord (5.1,5.1) is close to current
+diff is 0.6082762530298216, delta is 1.1
+parsing vec 11
+coord (7.2,5.2) isn't close to current
+diff is 2.3086792761230392, delta is 1.1
+parsing vec 12
+parsing vec 13
+coord (9.9,5) isn't close to current
+diff is 4.925444142409901, delta is 1.1
+parsing vec 14
+coord (10.9,5) isn't close to current
+diff is 5.921148537234985, delta is 1.1
+coord (12.1,6) isn't close to current
+diff is 7.256721022610694, delta is 1.1
+parsing vec 15
+coord (12.1,6) isn't close to current
+diff is 7.256721022610694, delta is 1.1
+coord (12,7.2) isn't close to current
+diff is 7.502666192761077, delta is 1.1
+parsing vec 16
+coord (12.1,6) isn't close to current
+diff is 7.256721022610694, delta is 1.1
+coord (13.1,5.5) isn't close to current
+diff is 8.161494961096281, delta is 1.1
+parsing vec 17
+coord (13.1,5) isn't close to current
+diff is 8.115417426109392, delta is 1.1
+coord (13.1,3.8) isn't close to current
+diff is 8.130190649671137, delta is 1.1
+parsing vec 18
+coord (13.55,5) isn't close to current
+diff is 8.564607404896035, delta is 1.1
+coord (13.55,3.8) isn't close to current
+diff is 8.5786071130458, delta is 1.1
+parsing vec 19
+coord (13.55,5.5) isn't close to current
+diff is 8.608280896903866, delta is 1.1
+coord (14.5,6.7) isn't close to current
+diff is 9.751410154434076, delta is 1.1
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+---> 7: parsing coord (7.2,4.5)
+parsing vec 8
+coord (7.2,4.5) is close to current
+diff is 0.0, delta is 1.1
+parsing vec 9
+parsing vec 10
+parsing vec 11
+coord (7.2,5.2) is close to current
+diff is 0.7000000000000002, delta is 1.1
+parsing vec 12
+parsing vec 13
+coord (9.9,5) isn't close to current
+diff is 2.7459060435491964, delta is 1.1
+parsing vec 14
+coord (10.9,5) isn't close to current
+diff is 3.733630940518894, delta is 1.1
+coord (12.1,6) isn't close to current
+diff is 5.124451190127583, delta is 1.1
+parsing vec 15
+coord (12.1,6) isn't close to current
+diff is 5.124451190127583, delta is 1.1
+coord (12,7.2) isn't close to current
+diff is 5.5072679252057455, delta is 1.1
+parsing vec 16
+coord (12.1,6) isn't close to current
+diff is 5.124451190127583, delta is 1.1
+coord (13.1,5.5) isn't close to current
+diff is 5.984145720150872, delta is 1.1
+parsing vec 17
+coord (13.1,5) isn't close to current
+diff is 5.921148537234984, delta is 1.1
+coord (13.1,3.8) isn't close to current
+diff is 5.941380311005179, delta is 1.1
+parsing vec 18
+coord (13.55,5) isn't close to current
+diff is 6.369654621720082, delta is 1.1
+coord (13.55,3.8) isn't close to current
+diff is 6.38846616959032, delta is 1.1
+parsing vec 19
+coord (13.55,5.5) isn't close to current
+diff is 6.4282579288637764, delta is 1.1
+coord (14.5,6.7) isn't close to current
+diff is 7.624303246854758, delta is 1.1
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+---> 13: parsing coord (9.9,5)
+parsing vec 14
+coord (10.9,5) is close to current
+diff is 1.0, delta is 1.1
+coord (12.1,6) isn't close to current
+diff is 2.4166091947189137, delta is 1.1
+parsing vec 15
+coord (12.1,6) isn't close to current
+diff is 2.4166091947189137, delta is 1.1
+coord (12,7.2) isn't close to current
+diff is 3.0413812651491097, delta is 1.1
+parsing vec 16
+coord (12.1,6) isn't close to current
+diff is 2.4166091947189137, delta is 1.1
+coord (13.1,5.5) isn't close to current
+diff is 3.2388269481403285, delta is 1.1
+parsing vec 17
+coord (13.1,5) isn't close to current
+diff is 3.1999999999999993, delta is 1.1
+coord (13.1,3.8) isn't close to current
+diff is 3.417601498127012, delta is 1.1
+parsing vec 18
+coord (13.55,5) isn't close to current
+diff is 3.6500000000000004, delta is 1.1
+coord (13.55,3.8) isn't close to current
+diff is 3.842199890687626, delta is 1.1
+parsing vec 19
+coord (13.55,5.5) isn't close to current
+diff is 3.6840874039577294, delta is 1.1
+coord (14.5,6.7) isn't close to current
+diff is 4.904079934095691, delta is 1.1
+letter is close
+assigning coord sum to letter center
+coord (14.5,6.7) isn't close to current
+diff is 4.904079934095691, delta is 1.1
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+---> 14: parsing coord (12.1,6)
+parsing vec 15
+coord (12.1,6) is close to current
+diff is 0.0, delta is 1.1
+coord (12,7.2) isn't close to current
+diff is 1.2041594578792296, delta is 1.1
+parsing vec 16
+coord (12.1,6) is close to current
+diff is 0.0, delta is 1.1
+coord (13.1,5.5) isn't close to current
+diff is 1.118033988749895, delta is 1.1
+parsing vec 17
+coord (13.1,5) isn't close to current
+diff is 1.4142135623730951, delta is 1.1
+coord (13.1,3.8) isn't close to current
+diff is 2.4166091947189146, delta is 1.1
+parsing vec 18
+coord (13.55,5) isn't close to current
+diff is 1.7613914953808547, delta is 1.1
+coord (13.55,3.8) isn't close to current
+diff is 2.63486242525108, delta is 1.1
+parsing vec 19
+coord (13.55,5.5) isn't close to current
+diff is 1.5337861650177977, delta is 1.1
+coord (14.5,6.7) isn't close to current
+diff is 2.5000000000000004, delta is 1.1
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,0,0,0,0,0,0
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,0,0,0,0,0,0
+---> 15: parsing coord (12,7.2)
+parsing vec 16
+coord (13.1,5.5) isn't close to current
+diff is 2.0248456731316584, delta is 1.1
+parsing vec 17
+coord (13.1,5) isn't close to current
+diff is 2.4596747752497685, delta is 1.1
+coord (13.1,3.8) isn't close to current
+diff is 3.5735136770411278, delta is 1.1
+parsing vec 18
+coord (13.55,5) isn't close to current
+diff is 2.6911893281595787, delta is 1.1
+coord (13.55,3.8) isn't close to current
+diff is 3.7366428783066765, delta is 1.1
+parsing vec 19
+coord (13.55,5.5) isn't close to current
+diff is 2.300543414065469, delta is 1.1
+coord (14.5,6.7) isn't close to current
+diff is 2.5495097567963922, delta is 1.1
+letter is close
+assigning coord sum to letter center
+coord (14.5,6.7) isn't close to current
+diff is 2.5495097567963922, delta is 1.1
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0
+---> 16: parsing coord (13.1,5.5)
+parsing vec 17
+coord (13.1,5) is close to current
+diff is 0.5, delta is 1.1
+coord (13.1,3.8) isn't close to current
+diff is 1.7000000000000002, delta is 1.1
+parsing vec 18
+coord (13.55,5) is close to current
+diff is 0.6726812023536862, delta is 1.1
+coord (13.55,3.8) isn't close to current
+diff is 1.7585505395068979, delta is 1.1
+parsing vec 19
+coord (13.55,5.5) is close to current
+diff is 0.45000000000000107, delta is 1.1
+coord (14.5,6.7) isn't close to current
+diff is 1.8439088914585777, delta is 1.1
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,0
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,0
+---> 17: parsing coord (13.1,3.8)
+parsing vec 18
+coord (13.55,3.8) is close to current
+diff is 0.45000000000000107, delta is 1.1
+parsing vec 19
+coord (14.5,6.7) isn't close to current
+diff is 3.220248437620924, delta is 1.1
+letter is close
+assigning coord sum to letter center
+coord (14.5,6.7) isn't close to current
+diff is 3.220248437620924, delta is 1.1
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
+---> 19: parsing coord (14.5,6.7)
+---> (generate) input points
+15
+C:(4.166666666666667,6.016666666666667):other()
+C:(4.166666666666667,7.233333333333333):other()
+C:(5.2125,8.5):other()
+I:(3.6,10.45):other()
+C:(7.416666666666667,8.549999999999999):other()
+C:(8.116666666666667,7.5):other()
+C:(8.2,5.824999999999999):other()
+C:(5.033333333333333,4.7):other()
+C:(7.2,4.733333333333333):other()
+I:(10.350000000000001,4.75):other()
+C:(12.1,6.0):other()
+I:(12.075,7.2):other()
+C:(13.325,5.25):other()
+I:(13.5,3.0):other()
+C:(14.5,6.7):other()
+---> (generate) connections
+[[4.166666666666667, 6.016666666666667], [4.166666666666667, 7.233333333333333]]
+[[4.166666666666667, 7.233333333333333], [5.2125, 8.5]]
+[[5.2125, 8.5], [3.6, 10.45]]
+[[5.2125, 8.5], [7.416666666666667, 8.549999999999999]]
+[[7.416666666666667, 8.549999999999999], [8.116666666666667, 7.5]]
+[[8.116666666666667, 7.5], [8.2, 5.824999999999999]]
+[[4.166666666666667, 6.016666666666667], [5.033333333333333, 4.7]]
+[[5.033333333333333, 4.7], [7.2, 4.733333333333333]]
+[[7.2, 4.733333333333333], [8.2, 5.824999999999999]]
+[[4.166666666666667, 7.233333333333333], [5.2125, 8.5]]
+[[4.166666666666667, 6.016666666666667], [5.033333333333333, 4.7]]
+[[7.2, 4.733333333333333], [8.2, 5.824999999999999]]
+[[7.416666666666667, 8.549999999999999], [8.116666666666667, 7.5]]
+[[8.2, 5.824999999999999], [10.350000000000001, 4.75]]
+[[10.350000000000001, 4.75], [12.1, 6.0]]
+[[12.1, 6.0], [12.075, 7.2]]
+[[12.1, 6.0], [13.325, 5.25]]
+[[13.325, 5.25], [13.5, 3.0]]
+[[13.325, 5.25], [13.5, 3.0]]
+[[13.325, 5.25], [14.5, 6.7]]
+---> Out from generate_list
+C:(4.166666666666667,6.016666666666667):other((4.166666666666667,7.233333333333333)::1
+(5.033333333333333,4.7)::2
+(5.2125,8.5)::2
+(3.6,10.45)::1
+(7.416666666666667,8.549999999999999)::1
+(8.116666666666667,7.5)::2
+(8.2,5.824999999999999)::3
+(10.350000000000001,4.75)::1
+(7.2,4.733333333333333)::1
+(12.1,6.0)::1
+(12.075,7.2)::1
+(13.325,5.25)::1
+(13.5,3.0)::2
+(14.5,6.7)::1)
+C:(4.166666666666667,7.233333333333333):other((4.166666666666667,7.233333333333333)::1
+(5.033333333333333,4.7)::2
+(5.2125,8.5)::2
+(3.6,10.45)::1
+(7.416666666666667,8.549999999999999)::1
+(8.116666666666667,7.5)::2
+(8.2,5.824999999999999)::3
+(10.350000000000001,4.75)::1
+(7.2,4.733333333333333)::1
+(12.1,6.0)::1
+(12.075,7.2)::1
+(13.325,5.25)::1
+(13.5,3.0)::2
+(14.5,6.7)::1)
+C:(5.2125,8.5):other((4.166666666666667,7.233333333333333)::1
+(5.033333333333333,4.7)::2
+(5.2125,8.5)::2
+(3.6,10.45)::1
+(7.416666666666667,8.549999999999999)::1
+(8.116666666666667,7.5)::2
+(8.2,5.824999999999999)::3
+(10.350000000000001,4.75)::1
+(7.2,4.733333333333333)::1
+(12.1,6.0)::1
+(12.075,7.2)::1
+(13.325,5.25)::1
+(13.5,3.0)::2
+(14.5,6.7)::1)
+I:(3.6,10.45):other((4.166666666666667,7.233333333333333)::1
+(5.033333333333333,4.7)::2
+(5.2125,8.5)::2
+(3.6,10.45)::1
+(7.416666666666667,8.549999999999999)::1
+(8.116666666666667,7.5)::2
+(8.2,5.824999999999999)::3
+(10.350000000000001,4.75)::1
+(7.2,4.733333333333333)::1
+(12.1,6.0)::1
+(12.075,7.2)::1
+(13.325,5.25)::1
+(13.5,3.0)::2
+(14.5,6.7)::1)
+C:(7.416666666666667,8.549999999999999):other((4.166666666666667,7.233333333333333)::1
+(5.033333333333333,4.7)::2
+(5.2125,8.5)::2
+(3.6,10.45)::1
+(7.416666666666667,8.549999999999999)::1
+(8.116666666666667,7.5)::2
+(8.2,5.824999999999999)::3
+(10.350000000000001,4.75)::1
+(7.2,4.733333333333333)::1
+(12.1,6.0)::1
+(12.075,7.2)::1
+(13.325,5.25)::1
+(13.5,3.0)::2
+(14.5,6.7)::1)
+C:(8.116666666666667,7.5):other((4.166666666666667,7.233333333333333)::1
+(5.033333333333333,4.7)::2
+(5.2125,8.5)::2
+(3.6,10.45)::1
+(7.416666666666667,8.549999999999999)::1
+(8.116666666666667,7.5)::2
+(8.2,5.824999999999999)::3
+(10.350000000000001,4.75)::1
+(7.2,4.733333333333333)::1
+(12.1,6.0)::1
+(12.075,7.2)::1
+(13.325,5.25)::1
+(13.5,3.0)::2
+(14.5,6.7)::1)
+C:(8.2,5.824999999999999):other((4.166666666666667,7.233333333333333)::1
+(5.033333333333333,4.7)::2
+(5.2125,8.5)::2
+(3.6,10.45)::1
+(7.416666666666667,8.549999999999999)::1
+(8.116666666666667,7.5)::2
+(8.2,5.824999999999999)::3
+(10.350000000000001,4.75)::1
+(7.2,4.733333333333333)::1
+(12.1,6.0)::1
+(12.075,7.2)::1
+(13.325,5.25)::1
+(13.5,3.0)::2
+(14.5,6.7)::1)
+C:(5.033333333333333,4.7):other((4.166666666666667,7.233333333333333)::1
+(5.033333333333333,4.7)::2
+(5.2125,8.5)::2
+(3.6,10.45)::1
+(7.416666666666667,8.549999999999999)::1
+(8.116666666666667,7.5)::2
+(8.2,5.824999999999999)::3
+(10.350000000000001,4.75)::1
+(7.2,4.733333333333333)::1
+(12.1,6.0)::1
+(12.075,7.2)::1
+(13.325,5.25)::1
+(13.5,3.0)::2
+(14.5,6.7)::1)
+C:(7.2,4.733333333333333):other((4.166666666666667,7.233333333333333)::1
+(5.033333333333333,4.7)::2
+(5.2125,8.5)::2
+(3.6,10.45)::1
+(7.416666666666667,8.549999999999999)::1
+(8.116666666666667,7.5)::2
+(8.2,5.824999999999999)::3
+(10.350000000000001,4.75)::1
+(7.2,4.733333333333333)::1
+(12.1,6.0)::1
+(12.075,7.2)::1
+(13.325,5.25)::1
+(13.5,3.0)::2
+(14.5,6.7)::1)
+I:(10.350000000000001,4.75):other((4.166666666666667,7.233333333333333)::1
+(5.033333333333333,4.7)::2
+(5.2125,8.5)::2
+(3.6,10.45)::1
+(7.416666666666667,8.549999999999999)::1
+(8.116666666666667,7.5)::2
+(8.2,5.824999999999999)::3
+(10.350000000000001,4.75)::1
+(7.2,4.733333333333333)::1
+(12.1,6.0)::1
+(12.075,7.2)::1
+(13.325,5.25)::1
+(13.5,3.0)::2
+(14.5,6.7)::1)
+C:(12.1,6.0):other((4.166666666666667,7.233333333333333)::1
+(5.033333333333333,4.7)::2
+(5.2125,8.5)::2
+(3.6,10.45)::1
+(7.416666666666667,8.549999999999999)::1
+(8.116666666666667,7.5)::2
+(8.2,5.824999999999999)::3
+(10.350000000000001,4.75)::1
+(7.2,4.733333333333333)::1
+(12.1,6.0)::1
+(12.075,7.2)::1
+(13.325,5.25)::1
+(13.5,3.0)::2
+(14.5,6.7)::1)
+I:(12.075,7.2):other((4.166666666666667,7.233333333333333)::1
+(5.033333333333333,4.7)::2
+(5.2125,8.5)::2
+(3.6,10.45)::1
+(7.416666666666667,8.549999999999999)::1
+(8.116666666666667,7.5)::2
+(8.2,5.824999999999999)::3
+(10.350000000000001,4.75)::1
+(7.2,4.733333333333333)::1
+(12.1,6.0)::1
+(12.075,7.2)::1
+(13.325,5.25)::1
+(13.5,3.0)::2
+(14.5,6.7)::1)
+C:(13.325,5.25):other((4.166666666666667,7.233333333333333)::1
+(5.033333333333333,4.7)::2
+(5.2125,8.5)::2
+(3.6,10.45)::1
+(7.416666666666667,8.549999999999999)::1
+(8.116666666666667,7.5)::2
+(8.2,5.824999999999999)::3
+(10.350000000000001,4.75)::1
+(7.2,4.733333333333333)::1
+(12.1,6.0)::1
+(12.075,7.2)::1
+(13.325,5.25)::1
+(13.5,3.0)::2
+(14.5,6.7)::1)
+I:(13.5,3.0):other((4.166666666666667,7.233333333333333)::1
+(5.033333333333333,4.7)::2
+(5.2125,8.5)::2
+(3.6,10.45)::1
+(7.416666666666667,8.549999999999999)::1
+(8.116666666666667,7.5)::2
+(8.2,5.824999999999999)::3
+(10.350000000000001,4.75)::1
+(7.2,4.733333333333333)::1
+(12.1,6.0)::1
+(12.075,7.2)::1
+(13.325,5.25)::1
+(13.5,3.0)::2
+(14.5,6.7)::1)
+C:(14.5,6.7):other((4.166666666666667,7.233333333333333)::1
+(5.033333333333333,4.7)::2
+(5.2125,8.5)::2
+(3.6,10.45)::1
+(7.416666666666667,8.549999999999999)::1
+(8.116666666666667,7.5)::2
+(8.2,5.824999999999999)::3
+(10.350000000000001,4.75)::1
+(7.2,4.733333333333333)::1
+(12.1,6.0)::1
+(12.075,7.2)::1
+(13.325,5.25)::1
+(13.5,3.0)::2
+(14.5,6.7)::1)

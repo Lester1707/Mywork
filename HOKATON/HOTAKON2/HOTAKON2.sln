@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "HOTAKON2", "HOTAKON2\HOTAKON2.pyproj", "{B530870C-DB01-401E-A5EB-F8B1F0CB5BE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B530870C-DB01-401E-A5EB-F8B1F0CB5BE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B530870C-DB01-401E-A5EB-F8B1F0CB5BE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E110586-7B8B-451D-AEE9-F6DE9BFD2110}
+	EndGlobalSection
+EndGlobal
