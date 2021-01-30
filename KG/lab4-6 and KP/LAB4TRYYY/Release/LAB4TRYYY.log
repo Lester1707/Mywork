@@ -1,0 +1,11 @@
+﻿  LAB4TRYYY.cpp
+c:\users\asus\source\repos\lab4tryyy\lab4tryyy\world.hpp(181): warning C4305: инициализация: усечение из "double" в "float"
+c:\users\asus\source\repos\lab4tryyy\lab4tryyy\lab4tryyy.cpp(35): warning C4305: инициализация: усечение из "double" в "GLfloat"
+c:\users\asus\source\repos\lab4tryyy\lab4tryyy\lab4tryyy.cpp(21): warning C4101: renderer: неиспользованная локальная переменная
+c:\users\asus\source\repos\lab4tryyy\lab4tryyy\lab4tryyy.cpp(22): warning C4101: version: неиспользованная локальная переменная
+  Создание кода
+  356 of 446 functions (79.8%) were compiled, the rest were copied from previous compilation.
+    229 functions were new in current compilation
+    15 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  LAB4TRYYY.vcxproj -> C:\Users\Asus\source\repos\LAB4TRYYY\Release\LAB4TRYYY.exe

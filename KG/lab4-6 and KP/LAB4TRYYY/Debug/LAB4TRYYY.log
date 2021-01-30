@@ -1,0 +1,69 @@
+﻿  LAB4TRYYY.cpp
+c:\users\asus\source\repos\lab4tryyy\lab4tryyy\world.hpp(181): warning C4305: инициализация: усечение из "double" в "float"
+c:\users\asus\source\repos\lab4tryyy\lab4tryyy\lab4tryyy.cpp(16): warning C4305: инициализация: усечение из "double" в "float"
+c:\users\asus\source\repos\lab4tryyy\lab4tryyy\lab4tryyy.cpp(74): warning C4244: аргумент: преобразование "double" в "const _Ty", возможна потеря данных
+          with
+          [
+              _Ty=float
+          ]
+c:\users\asus\source\repos\lab4tryyy\lab4tryyy\lab4tryyy.cpp(75): warning C4244: аргумент: преобразование "double" в "const _Ty", возможна потеря данных
+          with
+          [
+              _Ty=float
+          ]
+c:\users\asus\source\repos\lab4tryyy\lab4tryyy\lab4tryyy.cpp(76): warning C4244: аргумент: преобразование "double" в "const _Ty", возможна потеря данных
+          with
+          [
+              _Ty=float
+          ]
+c:\users\asus\source\repos\lab4tryyy\lab4tryyy\lab4tryyy.cpp(120): warning C4244: аргумент: преобразование "double" в "const _Ty", возможна потеря данных
+          with
+          [
+              _Ty=float
+          ]
+c:\users\asus\source\repos\lab4tryyy\lab4tryyy\lab4tryyy.cpp(121): warning C4244: аргумент: преобразование "double" в "const _Ty", возможна потеря данных
+          with
+          [
+              _Ty=float
+          ]
+c:\users\asus\source\repos\lab4tryyy\lab4tryyy\lab4tryyy.cpp(122): warning C4244: аргумент: преобразование "double" в "const _Ty", возможна потеря данных
+          with
+          [
+              _Ty=float
+          ]
+c:\users\asus\source\repos\lab4tryyy\lab4tryyy\lab4tryyy.cpp(159): warning C4244: аргумент: преобразование "double" в "const _Ty", возможна потеря данных
+          with
+          [
+              _Ty=float
+          ]
+c:\users\asus\source\repos\lab4tryyy\lab4tryyy\lab4tryyy.cpp(160): warning C4244: аргумент: преобразование "double" в "const _Ty", возможна потеря данных
+          with
+          [
+              _Ty=float
+          ]
+c:\users\asus\source\repos\lab4tryyy\lab4tryyy\lab4tryyy.cpp(161): warning C4244: аргумент: преобразование "double" в "const _Ty", возможна потеря данных
+          with
+          [
+              _Ty=float
+          ]
+c:\users\asus\source\repos\lab4tryyy\lab4tryyy\lab4tryyy.cpp(169): warning C4305: инициализация: усечение из "double" в "float"
+c:\users\asus\source\repos\lab4tryyy\lab4tryyy\lab4tryyy.cpp(169): warning C4305: +=: усечение из "double" в "float"
+c:\users\asus\source\repos\lab4tryyy\lab4tryyy\lab4tryyy.cpp(334): warning C4305: аргумент: усечение из "double" в "_Ty"
+          with
+          [
+              _Ty=float
+          ]
+c:\users\asus\source\repos\lab4tryyy\lab4tryyy\lab4tryyy.cpp(335): warning C4305: аргумент: усечение из "double" в "_Ty"
+          with
+          [
+              _Ty=float
+          ]
+c:\users\asus\source\repos\lab4tryyy\lab4tryyy\lab4tryyy.cpp(336): warning C4305: аргумент: усечение из "double" в "_Ty"
+          with
+          [
+              _Ty=float
+          ]
+c:\users\asus\source\repos\lab4tryyy\lab4tryyy\lab4tryyy.cpp(362): warning C4305: аргумент: усечение из "double" в "const float"
+c:\users\asus\source\repos\lab4tryyy\lab4tryyy\lab4tryyy.cpp(350): warning C4101: renderer: неиспользованная локальная переменная
+c:\users\asus\source\repos\lab4tryyy\lab4tryyy\lab4tryyy.cpp(351): warning C4101: version: неиспользованная локальная переменная
+  LAB4TRYYY.vcxproj -> C:\Users\Asus\source\repos\LAB4TRYYY\Debug\LAB4TRYYY.exe
