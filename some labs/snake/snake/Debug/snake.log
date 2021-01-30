@@ -1,0 +1,26 @@
+﻿  snake.cpp
+c:\users\asus\source\repos\snake\snake\ann_lib.hpp(14): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\users\asus\source\repos\snake\snake\ann_lib.hpp(18): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\asus\source\repos\snake\snake\ann_lib.hpp(28): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\users\asus\source\repos\snake\snake\ann_lib.hpp(42): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\users\asus\source\repos\snake\snake\ann_lib.hpp(43): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\asus\source\repos\snake\snake\ann_lib.hpp(44): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\asus\source\repos\snake\snake\ann_lib.hpp(45): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\asus\source\repos\snake\snake\ann_lib.hpp(49): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\asus\source\repos\snake\snake\ann_lib.hpp(59): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\users\asus\source\repos\snake\snake\ann_lib.hpp(60): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\asus\source\repos\snake\snake\ann_lib.hpp(61): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\asus\source\repos\snake\snake\ann_lib.hpp(62): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\asus\source\repos\snake\snake\ann_lib.hpp(67): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\asus\source\repos\snake\snake\ann_lib.hpp(79): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\asus\source\repos\snake\snake\ann_lib.hpp(81): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\asus\source\repos\snake\snake\ann_lib.hpp(82): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\asus\source\repos\snake\snake\ann_lib.hpp(87): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\asus\source\repos\snake\snake\ann_lib.hpp(99): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\asus\source\repos\snake\snake\ann_lib.hpp(123): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\asus\source\repos\snake\snake\ann_lib.hpp(124): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\asus\source\repos\snake\snake\ann_lib.hpp(139): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\asus\source\repos\snake\snake\ann_lib.hpp(142): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\asus\source\repos\snake\snake\ann_lib.hpp(171): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\asus\source\repos\snake\snake\ann_lib.hpp(174): warning C4018: <: несоответствие типов со знаком и без знака
+  snake.vcxproj -> C:\Users\Asus\source\repos\snake\Debug\snake.exe
