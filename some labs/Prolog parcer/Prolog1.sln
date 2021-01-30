@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Prolog1", "Prolog1\Prolog1.pyproj", "{F8BC3CDD-0174-48EA-ADBC-8A29A5A704F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8BC3CDD-0174-48EA-ADBC-8A29A5A704F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8BC3CDD-0174-48EA-ADBC-8A29A5A704F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B037F1F8-606F-4B18-9AAE-05FCD3B0BCB6}
+	EndGlobalSection
+EndGlobal
