@@ -3,7 +3,7 @@ from PIL import Image, ImageDraw, ImageFont
 import recognition as rg
 import math as m
 
-width = 1000 #int(input('input width:')) стандарт тыща но можно вводить если поставить хуйню в коментах на место тыщи
+width = 1000 #int(input('input width:')) стандарт 1000 но можно вводить если убрать комент
 height = 1000 #int(input('input height: ')) тоже самое но высота
 font = ImageFont.truetype("C:\\Windows\\Fonts\\Arial.ttf", 90)
 #font_num = ImageFont.truetype("C:\\Windows\\Fonts\\Arial.ttf", 30)
