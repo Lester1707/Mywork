@@ -37,8 +37,8 @@ int main(int argc, char* argv[])
     string text;
     size_t size_text;
     char ch;
-    string filename_in = "./train.txt";
-    string filename_out = "./bd.txt";
+    string filename_in = "C:\\Users\\kupts\\source\\repos\\BaiseTest\\Debug\\train.txt";
+    string filename_out = "C:\\Users\\kupts\\source\\repos\\BaiseTest\\Debug\\bd.txt";
     string filename_get_base = filename_out;
     size_t count = 0;
     size_t word_count;
@@ -119,8 +119,8 @@ int main(int argc, char* argv[])
     file_get.close();
     cout << "train size: " << count << endl;
 
-    filename_out = "./answer.txt";
-    filename_in = "./test.txt";
+    filename_out = "C:\\Users\\kupts\\source\\repos\\BaiseTest\\Debug\\answer.txt";
+    filename_in = "C:\\Users\\kupts\\source\\repos\\BaiseTest\\Debug\\test.txt";
     file = ofstream(filename_out, ios::out);
     ifstream file_in(filename_get_base, ios::in);
     file_in.tie(nullptr);
@@ -148,11 +148,17 @@ int main(int argc, char* argv[])
     unordered_map <string, float> k1(0);
     unordered_map <string, float> k2(0);
     file_get = ifstream(filename_in, ios::in);
+    if (!file_get.is_open()) {
+        cout << "ERROR: cant open the file!\n";
+        return 0;
+    }
     file_get.tie(nullptr);
     string true_ans;
     float help;
     count = 0;
     size_t true_count = 0;
+    unordered_map <string, size_t> pres;
+    unordered_map <string, size_t> pres_tags;
     while (true) {
         if (!(file_get >> size_text))
             break;
@@ -221,15 +227,23 @@ int main(int argc, char* argv[])
                 answer = alloc->first;
             }
         }
-        if (answer == true_ans)
+        pres_tags[true_ans]++;
+        if (answer == true_ans) {
             true_count++;
+            pres[true_ans]++;
+        }
         file << answer << '\n';
         true_ans.clear();
         count++;
     }
     cout << "test size:" << count << endl;
     cout << "accuracy:" << float(true_count) / count << endl;
+    cout << "tag | P | R\n";
+    for (auto alloc = pres.begin(); alloc != pres.end(); alloc++) {
+        cout << alloc->first << ' ' << float(alloc->second) / count << ' ' << float(alloc->second) / pres_tags[alloc->first] << '\n';
+    }
     file.close();
     file_get.close();
+    
     return 0;
 }
